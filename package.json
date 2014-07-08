@@ -1,0 +1,8 @@
+{
+  "name": "express-johnny5-poc",
+  "dependencies": {
+    "johnny-five": "latest",
+    "express": "latest",
+    "socket.io": "1.0.6"
+  }
+}
