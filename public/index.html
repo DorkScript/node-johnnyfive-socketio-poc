@@ -1,0 +1,21 @@
+<html>
+  <head>
+  <script src="/bower_componnets/jquery/dist/jquery.min.js"></script>
+  <script src="/bower_componnets/socket.io-client/socket.io.js"></script>
+  <script src="/bower_componnets/Processing.js/processing.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      var socket = io.connect('http://localhost');
+
+      socket.on('data', function (data) {
+        $("#pento").text(data);
+      });
+
+    });
+  </script>
+  </head>
+  <body>
+    <h1 id="pento"></h1>
+  </body>
+</html>
